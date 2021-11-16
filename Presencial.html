@@ -1,0 +1,427 @@
+<!doctype html>
+
+<head>
+  <title>Dr. Kevin Aparicio</title>
+<meta charset="utf-8">
+</head>
+
+<style>
+html{
+    background-color: rgb(247,247,247);
+    }
+    
+header{
+    padding:5px;
+    margin:5px;
+    background-color:white;
+    width: 1200px; 
+    height: 155px;
+    border-radius: 20px;
+    }
+    
+    h4{
+    text-align: right;
+    font-size: 15px;
+    color: #979797;
+    font-family: Arial, Verdana, sans-serif;
+    }
+    
+    .redes {
+    display: inline-block;
+    float: right;
+    }
+    
+    nav{
+      padding:5px;
+    margin: 5px;
+    background-color:white;
+    width: 1200px; 
+    height: 20px;
+    border-radius: 20px;
+    word-spacing: 190px;
+    }
+    
+    a{
+    text-decoration: none;
+    font-family: Arial, Verdana, sans-serif;
+    color: #b6b4b4;
+    font-weight: bold;
+    }
+	footer{
+    padding:5px;
+    margin:5px;
+    background-color:white;
+    width: 1200px; 
+    height: 280px;
+    border-radius: 20px;
+    }
+    
+    footer {
+      background-color: #2e75b6;
+      background-image: linear-gradient(180deg, #3399ff, #33cccc, #33ccff);
+    }
+    
+    ul{
+      list-style: none;
+    }
+    .pie li {
+        padding-right: 40px;
+    }
+    .pie ul li a{
+      font-size: 16px;
+      text-transform:16px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 300;
+      color: #000000;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .pie ul li a:hover{
+      color: #000000;
+      padding-left: 8px;
+    }
+    .pie ul li:not(:last-child){
+      margin-bottom: 25px;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pie{
+      width: 30%;
+      padding: 0 15px;
+    }
+    .pie h6{
+      font-size: 25px;
+      color: #fdfdfd;
+      text-transform: capitalize;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+      background-color: lightskyblue
+    }
+    .pie h6::before{
+    content: "";
+    position: absolute;
+    left: 130px;
+    bottom: -10px;
+    background-color: #fa0202;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px
+    }
+main{
+padding:5px;
+margin:5px;
+background-color:white;
+width: 1200px; 
+height: 880px;
+border-radius: 20px;
+}
+
+.Formulario{
+  position: relative;
+}
+
+.Opciones{
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  font-size: 35px;
+}
+
+h1{font-family: "Copperplate", fantasy;
+letter-spacing: 3px;
+}
+
+label{-webkit-text-stroke: 1px black;}
+
+form{font-family: "Arial", sans-seriff;
+font-weight: bold;
+color: white;
+left: 90px;
+position: absolute;
+top: 140px;
+font-size: 35px;
+text-align: left;
+}
+
+h2{font-family: "Copperplate", fantasy;
+letter-spacing: 3px;
+color: black;
+font-size: 55px;
+margin-bottom: -40px;
+}
+
+h3{margin-bottom: 5px;
+margin-top:30px;
+-webkit-text-stroke: 1px black;}
+
+form input[id="name"]{
+	width:802px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+	}
+
+form input[id="ID"]{
+	width:170px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+	margin-top: 12px;
+}
+
+form input[id="cellphone"],
+form input[id="telephone"]{
+	width:198px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+	margin-top: 12px;
+}
+
+form input[id="mail"]{
+	width:623px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+	margin-top: 12px;
+}
+
+form input[type="date"]{
+	width:180px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+	margin-top: 12px;
+}
+
+form select[id="dates"]{
+	width:198px;
+	height: 30px;
+	border:1px solid #f6f6f6;
+	padding:3px 10px;
+	border-radius:3px;
+	background-color:white;
+	font-size: 18px;
+}
+
+textarea{
+	width:990px;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:white;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+	margin-bottom: -30px;
+	font-size: 20px;
+}
+
+form button[type="submit"]{
+	width:200px;
+	border:1px;
+	border-radius:5px;
+	padding:8px 16px;
+	margin-top:32px;
+	font-size:20px;
+	color:white;
+	font-weight: bold;
+	background-color:#3399ff;
+}
+
+form input[type="button"]{
+	width:200px;
+	border:1px;
+	border-radius:5px;
+	padding:8px 16px;
+	margin-top:32px;
+	font-size:20px;
+	color:white;
+	font-weight: bold;
+	background-color:#3399ff;
+	margin-right:587px;
+}
+
+form button[type="submit"],form input[type="button"]:hover{
+	cursor:pointer;
+}
+footer{
+    padding:5px;
+    margin:5px;
+    background-color:white;
+    width: 1200px; 
+    height: 280px;
+    border-radius: 20px;
+    }
+    
+    footer {
+      background-color: #2e75b6;
+      background-image: linear-gradient(180deg, #3399ff, #33cccc, #33ccff);
+    }
+    
+    ul{
+      list-style: none;
+    }
+    .pie li {
+        padding-right: 40px;
+    }
+    .pie ul li a{
+      font-size: 16px;
+      text-transform:16px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 300;
+      color: #000000;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .pie ul li a:hover{
+      color: #000000;
+      padding-left: 8px;
+    }
+    .pie ul li:not(:last-child){
+      margin-bottom: 25px;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pie{
+      width: 30%;
+      padding: 0 15px;
+    }
+    .pie h6{
+      font-size: 25px;
+      color: #fdfdfd;
+      text-transform: capitalize;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+      background-color: lightskyblue
+    }
+    .pie h6::before{
+    content: "";
+    position: absolute;
+    left: 130px;
+    bottom: -10px;
+    background-color: #fa0202;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px
+    }
+
+</style>
+</head>
+
+<body>
+<center><header>
+<section id="logo" ><img style="float:left" src="cita previa.png" width="770" height="150" HSPACE="20"></section>
+</header></center>
+
+<center><main><article>
+<div class="Form">
+  <div class="Formulario">
+  <img src="Formback.png"width="1100" height="820" VSPACE="30">
+    <div class="Opciones"><h1>Datos del paciente</h1></div>
+	<form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name" placeholder="Escriba el nombre y apellido"/></br>
+
+    <label for="name">Cédula/Pasaporte:</label>
+    <input type="text" id="ID" name="user_ID" placeholder="00-000-000"/>
+	
+	<label for="name">Fecha de Nac.:</label>
+	<form action=""method="">
+    <input type="date">
+	</br>
+
+	<label for="name">Telf.móvil:</label>
+    <input type="text" id="cellphone" name="user_cell"/>
+	
+	<label for="name">Telf.casa (opcional):</label>
+    <input type="text" id="telephone" name="user_phone"/></br>
+	
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" id="mail" name="user_email" /></br>
+	
+	<h2>Datos de la cita</h2>
+	<h3>Fecha deseada</h3>
+    <label>Día:</label>
+	<form action=""method="">
+    <input type="date">
+    
+    <label for="dates">Turno:</label>
+  <select id="dates">
+    <option value="None"></option>
+    <option value="Matutino">Matutino</option>
+    <option value="Vespertino">Vespertino</option>
+    <option value="Nocturno">Nocturno</option>
+  </select>
+  </br>
+	
+	<label for="msg">Descripción del malestar presente:</label></br>
+    <textarea id="msg" name="user_message"></textarea></br>
+
+    <a href="index.html"><input type="button" value="Regresar a Inicio"></a>
+	<button type="submit" name="Enviar"/>Enviar datos</button>
+	</form>
+  </div>
+<div>
+</main></article></center>
+
+<center>
+  <footer>
+    <div class="row">
+      <div class="pie">
+        <h6>Mapa</h6>
+      <ul>
+        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.0252106263865!2d-79.53477618526587!3d8.969823793561941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8c163deef87%3A0x2a4a35c296cb24d2!2sHospital%20Santo%20Tomas!5e0!3m2!1ses!2spa!4v1627254231133!5m2!1ses!2spa" 
+          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+        
+      </ul>
+    </div>
+      <div class="pie">
+      <h6>Menú</h6>
+      <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Medicamentos.html">Medicamentos</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Preguntas.html">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="pie">
+      <h6>Contacto</h6>
+    <ul>
+      <li><a href="tel:+507 6372-2376">Tel.: +507 6372-2376</a></li>
+      <li><a href="mailto:wckevin30@gmail.com">Correo:wckevin@gmail.com</a></li>
+    </ul>
+  </div>
+    </div>
+    <p class="text-center">&copy;Copyright © 2021 Dr. Kevin Aparicio</p>
+    <br>
+  </footer>
+  </center>
+</body>
+</html>
